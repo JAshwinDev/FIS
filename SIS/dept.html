@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Departments</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Internal Styling -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 220px; /* 👈 Increased height */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* 👈 Bright glow (blue-ish) */
+    }
+
+    .card-link {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <main>
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">DEPARTMENTS</h2>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <a href="cse.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-laptop-code text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">CSE</h3>
+            </div>
+          </a>
+
+          <a href="aids.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-database text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">AIDS</h3>
+            </div>
+          </a>
+
+          <a href="mech.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-cogs text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">MECH</h3>
+            </div>
+          </a>
+
+          <a href="ece.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-microchip text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">ECE</h3>
+            </div>
+          </a>
+
+          <a href="it.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-network-wired text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">IT</h3>
+            </div>
+          </a>
+
+          <a href="sh.html" class="card-link">
+            <div class="card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+              <i class="fas fa-flask text-blue-600 text-3xl"></i>
+              <h3 class="mt-4 text-xl font-semibold text-gray-800">S&H</h3>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
